@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyruz Aguilar - Porfolio</title>
+    <link rel="icon" type="image/png" href="src/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+.project-card {
+  margin-bottom: 30px;
+}
+  
+.project-card img {
+  height: 200px; 
+  object-fit: cover;
+}
+
+.custom-logo {
+  max-width: 50px; 
+  height: auto;
+}
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.7s;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+    background-color: #fff; 
+}
+
+</style>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center animate__animated animate__fadeIn" href="#">
+            <!-- Your brand content here -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0" style="font-size: 18px; font-weight: 700;">
+                <li class="nav-item">
+                    <a class="nav-link animate__animated animate__fadeIn" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animate__animated animate__fadeIn" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animate__animated animate__fadeIn" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animate__animated animate__fadeIn" href="#seminars">Seminars</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link animate__animated animate__fadeIn" href="#certificates">Certificates</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link animate__animated animate__fadeIn" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animate__animated animate__fadeIn" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  
+<!----Home-->
+<section class="home py-5 animate__animated animate__fadeIn" id="home">
+  <div class="container-lg">
+    <div class="row align-items-center">
+      <div class="col-md-6 mt-5 mt-md-0 animate__animated animate__slideInLeft">
+        <div class="home-img text-center">
+          <img src="src/pic.jpg" class="rounded-circle mw-100" alt="profile image">
+        </div>
+      </div>
+      <div class="col-md-6 mt-5 mt-md-0 animate__animated animate__slideInRight">
+        <div class="home-text">
+          <p class="font-bold">Hello I'm</p>
+          <h1 class="text-primary text-uppercase fs-1 font-extrabold typing-effect animate__animated animate__heartBeat">Cyruz Jae Aguilar</h1>
+          <h3 class="text-dark">Fullstack Developer</h3>
+          <p>As a second-year BSIT (Bachelor of Science in Information Technology) student at Phinma-Araullo University, my passion for technology fuels my pursuit of knowledge and innovation. I am deeply engaged in exploring the dynamic world of IT, constantly seeking to broaden my skills and understanding of cutting-edge technologies.</p>
+          <div class="skills-icons fs-2 justify-content-center animate__animated animate__slideInRight">
+            <i class="fab fa-html5 text-danger"></i> 
+            <i class="fab fa-css3-alt text-primary"></i> 
+            <i class="fab fa-js-square text-warning"></i> 
+            <i class="fab fa-php text-secondary"></i>
+            <i class="fab fa-node-js text-success"></i>
+            <i class="fab fa-react text-info"></i>
+            <i class="fab fa-laravel text-purple"></i>
+            <i class="fas fa-database text-primary"></i>
+          </div>
+          <a href="#projects" class="btn btn-dark px-3 mt-3"><i class="bi bi-search"></i> View My Works</a>
+          <a href="#contact" class="btn btn-dark px-3 mt-3"><i class="bi bi-chat-left-text-fill"></i> Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+      <!----About-->
+      <section class="about py-5" id="about">
+        <div class="container-lg py-4 text-center">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <h5 class="fs-2 font-extrabold mb-5 animate__animated animate__fadeIn">About Me</h5>
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="src/code.jpg" class="d-block w-100" alt="image 1">
+                    <div class="carousel-caption">
+                      <h5>Proactive</h5>
+                      <p>I am someone who thrives on taking initiative. I seek out opportunities to solve problems before they arise, always striving to anticipate challenges and address them head-on.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="src/3.jpg" class="d-block w-100" alt="image 2">
+                    <div class="carousel-caption">
+                      <h5>Detailed</h5>
+                      <p>I am inherently detailed-oriented, driven by a passion for precision and accuracy in all aspects of my work. I meticulously examine every task, leaving no stone unturned, to ensure that each detail is thoroughly reviewed and perfected.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="src/1.jpg" class="d-block w-100" alt="image 3">
+                    <div class="carousel-caption">
+                      <h5>Organized</h5>
+                      <p>I am inherently organized, exhibiting a structured approach in both my professional and personal life. I meticulously plan and prioritize tasks, creating systematic workflows to ensure efficiency and effectiveness in achieving goals.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!---Services-->
+<section class="services py-5" id="services">
+  <div class="container-lg py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center animate__animated animate__fadeIn">
+          <h2 class="fs-2 font-extrabold mb-5">Services</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <!-- First service item -->
+      <div class="col-md-6 col-lg-4 mb-4 animate__animated animate__fadeIn">
+        <div class="service-item shadow-sm p-4 rounded bg-white">
+          <div class="card">
+            <div class="icon my-3 text-dark fs-1">
+              <i class="bi bi-code"></i>
+              <h3 class="fs-5 py-2 font-bold">Web Development</h3>
+            </div>
+            <p>I merge creativity with technical prowess to craft immersive digital experiences. Proficient in a diverse range of languages and frameworks. I excel in building responsive, feature-rich websites.</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Second service item -->
+      <div class="col-md-6 col-lg-4 mb-4 animate__animated animate__fadeIn">
+        <div class="service-item shadow-sm p-4 rounded bg-white">
+          <div class="card">
+            <div class="icon my-3 text-dark fs-1">
+              <i class="bi bi-brush"></i>
+              <h3 class="fs-5 py-2 font-bold">Creative Design</h3>
+            </div>
+            <p>I specialize in blending innovation with aesthetics to produce captivating visual experiences. I craft designs that not only catch the eye but also evoke emotions and convey messages effectively.</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Third service item -->
+      <div class="col-md-6 col-lg-4 mb-4 animate__animated animate__fadeIn">
+        <div class="service-item shadow-sm p-4 rounded bg-white">
+          <div class="card">
+            <div class="icon my-3 text-dark fs-1">
+              <i class="bi bi-laptop"></i>
+              <h3 class="fs-5 py-2 font-bold">Responsive</h3>
+            </div>
+            <p>Crafted to be fully responsive, ensuring optimal performance and visual appeal across all devices, regardless of screen size. Adapt and scale, delivering a consistent and user-friendly.</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Fourth service item -->
+      <div class="col-md-6 col-lg-4 mb-4 animate__animated animate__fadeIn">
+        <div class="service-item shadow-sm p-4 rounded bg-white">
+          <div class="card">
+            <div class="icon my-3 text-dark fs-1">
+              <i class="bi bi-phone"></i>
+              <h3 class="fs-5 py-2 font-bold">Mobile App Development</h3>
+            </div>
+            <p>Emphasize proficiency in building mobile-responsive and cross-platform applications.</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Fifth service item -->
+      <div class="col-md-6 col-lg-4 mb-4 animate__animated animate__fadeIn">
+        <div class="service-item shadow-sm p-4 rounded bg-white">
+          <div class="card">
+            <div class="icon my-3 text-dark fs-1">
+              <i class="bi bi-wrench"></i>
+              <h3 class="fs-5 py-2 font-bold">Maintenance & Support Services</h3>
+            </div>
+            <p>Promote ongoing maintenance or support services for developed projects.</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Sixth service item -->
+      <div class="col-md-6 col-lg-4 mb-4 animate__animated animate__fadeIn">
+        <div class="service-item shadow-sm p-4 rounded bg-white">
+          <div class="card">
+            <div class="icon my-3 text-dark fs-1">
+              <i class="bi bi-database"></i>
+              <h3 class="fs-5 py-2">Database Administration</h3>
+            </div>
+            <p>Ongoing maintenance, optimization and management to ensure performance and security.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seminars Section -->
+<section class="seminar py-5" id="seminars">
+  <div class="container">
+    <h2 class="fs-2 font-extrabold text-center mt-5 mb-5">Seminars Certificates</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#seminarModal1">
+            <img src="src/s1.jpg" style="height: 320px;" class="card-img-top rounded" alt="seminar 1">
+          </a>
+          <div class="card-body text-center">
+            <h2 class="fs-5 font-bold mb-2">Emerging Trends In Artificial Intelligence</h2><hr>
+            <p class="card-text">This seminar delves into the latest trends and advancements in AI, highlighting key developments that are shaping the future of technology and society. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#seminarModal2">
+            <img src="src/s2.jpg" style="height: 320px;" class="card-img-top rounded" alt="seminar 2">
+          </a>
+          <div class="card-body text-center">
+            <h2 class="fs-5 font-bold mb-2">Introduction To Swift Playground</h2><hr>
+            <p class="card-text"> Swift Playgrounds offers an immersive learning experience. This introduction provides an overview of Swift Playgrounds, and how it can be used to learn Swift programming language.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#seminarModal3">
+            <img src="src/s3.jpg" style="height: 320px;" class="card-img-top rounded" alt="seminar 3">
+          </a>
+          <div class="card-body text-center">
+            <h2 class="fs-5 font-bold mb-2">Innovation And Adaptation</h2><hr>
+            <p class="card-text">explores the symbiotic relationship between innovation and adaptation and examines how individuals and societies can harness these forces to thrive in an ever-evolving.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Modal for Certificate 1 -->
+<div class="modal fade" id="seminarModal1" tabindex="-1" aria-labelledby="seminareModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5 font-bold" id="certificateModalLabel1">Emerging Trends In Artificial Intelligence</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="src/s1.jpg" class="img-fluid rounded" alt="Certificate 1">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Certificate 2 -->
+<div class="modal fade" id="seminarModal2" tabindex="-1" aria-labelledby="seminareModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5 font-bold" id="certificateModalLabel2">Introduction To Swift Playground</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="src/s2.jpg" class="img-fluid rounded" alt="Certificate 2">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Certificate 3 -->
+<div class="modal fade" id="seminarModal3" tabindex="-1" aria-labelledby="seminarModalLabel3" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5 font-bold" id="certificateModalLabel3">Innovation And Adaptation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="src/s3.jpg" class="img-fluid rounded" alt="Certificate 3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Certificates Section -->
+<section class="container" id="certificates">
+    <h2 class="text-center mt-5 mb-4 fs-2 font-extrabold">Certificates</h2>
+  
+    <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-3">
+                <div class="img-holder">
+                    <img src="src/IntroductionToCss.png" class="card-img-top certificate-img" alt="New Certificate 1" data-bs-toggle="modal" data-bs-target="#certificateModal1">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-3">
+                <div class="img-holder">
+                    <img src="src/InstallingAndConfiguringComputerSystems.png" class="card-img-top certificate-img" alt="New Certificate 2" data-bs-toggle="modal" data-bs-target="#certificateModal2">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-3">
+                <div class="img-holder">
+                    <img src="src/MaintainingComputerSystems.png" class="card-img-top certificate-img" alt="New Certificate 3" data-bs-toggle="modal" data-bs-target="#certificateModal3">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-3">
+                <div class="img-holder">
+                    <img src="src/SettingUpComputerNetworks.png" class="card-img-top certificate-img" alt="New Certificate 4" data-bs-toggle="modal" data-bs-target="#certificateModal4">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-3">
+                <div class="img-holder">
+                    <img src="src/SettingUpComputerServers.png" class="card-img-top certificate-img" alt="New Certificate 5" data-bs-toggle="modal" data-bs-target="#certificateModal5">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-3">
+              <div class="img-holder">
+                  <img src="src/oracle.jpg" style="height: 340px;" class="card-img-top certificate-img" alt="New Certificate 6" data-bs-toggle="modal" data-bs-target="#certificateModal6">
+              </div>
+          </div>
+      </div>
+    </div>
+</section>
+
+<!-- Modal for displaying full-size certificate image -->
+<div class="modal fade" id="certificateModal1" tabindex="-1" aria-labelledby="certificateModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fs-4 font-bold" id="certificateModalLabel1">Introduction To CSS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="src/IntroductionToCss.png" class="img-fluid" alt="Certificate 1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="certificateModal2" tabindex="-1" aria-labelledby="certificateModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fs-4 font-bold" id="certificateModalLabel2">Installing And Configuring Computer Systems</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="src/InstallingAndConfiguringComputerSystems.png" class="img-fluid" alt="Certificate 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="certificateModal3" tabindex="-1" aria-labelledby="certificateModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fs-4 font-bold" id="certificateModalLabel3">Maintaining Computer Systems</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="src/MaintainingComputerSystems.png" class="img-fluid" alt="Certificate 3">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="certificateModal4" tabindex="-1" aria-labelledby="certificateModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fs-4 font-bold" id="certificateModalLabel4">Setting Up Computer Networks</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="src/SettingUpComputerNetworks.png" class="img-fluid" alt="Certificate 4">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="certificateModal5" tabindex="-1" aria-labelledby="certificateModalLabel5" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fs-4 font-bold" id="certificateModalLabel5">Setting Up Computer Servers</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="src/SettingUpComputerServers.png" class="img-fluid" alt="Certificate 5">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="certificateModal6" tabindex="-1" aria-labelledby="certificateModalLabel6" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title fs-4 font-bold" id="certificateModalLabel5">Oracle</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="src/oracle.jpg" class="img-fluid" alt="Certificate 6">
+          </div>
+      </div>
+  </div>
+</div>
+
+  
+  
+
+<!-----Projects-->
+<section class="container" id="projects">
+    <h2 class="text-center mt-5 mb-4 fs-2 font-extrabold">Projects</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="card project-card animate__animated animate__fadeIn">
+          <img src="src/shoe.webp" class="card-img-top" alt="Project 1">
+          <div class="card-body text-center">
+            <h5 class="card-title text-lg font-bold">Shoe Ordering System</h5>
+            <p class="card-text mb-2">It is an efficient shoe ordering system developed using the Java programming language, leveraging the Swing library for the user interface.</p>
+            <div class="d-flex justify-content-center gap-4 align-items-center">
+              <a href="https://drive.google.com/drive/folders/1yHD-v6iHoZa5hBqunscKNcxPHeHNYpse?fbclid=IwAR1-Np7qr3_ko1mX8zVHkG2R0-ZgpcqeMMfJuqYxGYv1NgnmeuZUUckEV2U" class="btn btn-warning">View Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="card project-card animate__animated animate__fadeIn">
+            <img src="src/androidStudio.png" class="object-cover" alt="Project 1">
+            <div class="card-body text-center">
+              <h5 class="card-title text-lg font-bold">InventoPro</h5>
+              <p class="card-text mb-2">It is an inventory management system that provides delivery service and made up using java on Android Studio IDE.</p>
+              <div class="d-flex justify-content-center gap-4 align-items-center">
+                <a href="https://drive.google.com/drive/folders/1yHD-v6iHoZa5hBqunscKNcxPHeHNYpse?fbclid=IwAR1-Np7qr3_ko1mX8zVHkG2R0-ZgpcqeMMfJuqYxGYv1NgnmeuZUUckEV2U" class="btn btn-warning">View Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card project-card animate__animated animate__fadeIn">
+          <img src="src/todo.png" class="card-img-top" alt="Project 3">
+          <div class="card-body text-center">
+            <h5 class="card-title text-lg font-bold">TaskList System</h5>
+            <p class="card-text mb-2">Website designed to efficiently manage your tasks. Developed using a blend of HTML, CSS, PHP, and JavaScript.</p>
+            <div class="d-flex justify-content-center gap-4 align-items-center">
+              <a href="https://drive.google.com/drive/folders/1_pgbnG4p3bjLxoxPIzFSS-pRWFwjvJJG?fbclid=IwAR1-Np7qr3_ko1mX8zVHkG2R0-ZgpcqeMMfJuqYxGYv1NgnmeuZUUckEV2U" class="btn btn-warning">View Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card project-card animate__animated animate__fadeIn">
+          <img src="src/galaxy.jpg" class="card-img-top" alt="Project 4">
+          <div class="card-body text-center">
+            <h5 class="card-title text-lg font-bold">Galaxy</h5>
+            <p class="card-text mb-2">This website is an immersive exploration into celestial bodies and space phenomena.</p>
+            <div class="d-flex justify-content-center gap-4 align-items-center">
+              <a href="https://drive.google.com/drive/folders/1hzEoFb6OcD4t8pFO2tF0d5ehHyby-7O1?fbclid=IwAR1-Np7qr3_ko1mX8zVHkG2R0-ZgpcqeMMfJuqYxGYv1NgnmeuZUUckEV2U" class="btn btn-warning">View Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card project-card animate__animated animate__fadeIn">
+          <img src="src/weather.png" class="card-img-top" alt="Project 5">
+          <div class="card-body text-center">
+            <h5 class="card-title text-lg font-bold">Weather Application</h5>
+            <p class="card-text mb-2">A weather app is a software application designed to provide users with up-to-date weather information for a specific location or multiple locations.</p>
+            <div class="d-flex justify-content-center gap-4 align-items-center">
+              <a href="weather.html" class="btn btn-warning">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card project-card animate__animated animate__fadeIn">
+          <img src="src/webcam.png" class="card-img-top" alt="Project 5">
+          <div class="card-body text-center">
+            <h5 class="card-title text-lg font-bold">Webcam</h5>
+            <p class="card-text mb-2">Is a web-based tool that allows users to access and interact with their device's webcam directly from their web browser. Built using HTML, CSS, and JavaScript.</p>
+            <div class="d-flex justify-content-center gap-4 align-items-center">
+              <a href="webcam.html" class="btn btn-warning">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card project-card animate__animated animate__fadeIn">
+          <img src="src/vt88.png" class="card-img-top" alt="Project 5">
+          <div class="card-body text-center">
+            <h5 class="card-title text-lg font-bold">VapourTown88</h5>
+            <p class="card-text mb-2">The Vaportown88 Ordering System is a comprehensive e-commerce platform tailored specifically for Vaportown88, a fictional vape products retailer.</p>
+            <div class="d-flex justify-content-center gap-4 align-items-center">
+              <a href="http://vaportown88.42web.io/?i=1" class="btn btn-warning">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card project-card animate__animated animate__fadeIn">
+          <img src="src/qr.png" class="card-img-top" alt="Project 5">
+          <div class="card-body text-center">
+            <h5 class="card-title text-lg font-bold">Qr Code Generator</h5>
+            <p class="card-text mb-2">The QR Code Generator App is a versatile tool designed to create QR (Quick Response) codes effortlessly for various purposes.</p>
+            <div class="d-flex justify-content-center gap-4 align-items-center">
+              <a href="qrcode.html" class="btn btn-warning">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card project-card animate__animated animate__fadeIn">
+          <img src="src/net.jpg" class="card-img-top" alt="Project 5">
+          <div class="card-body text-center">
+            <h5 class="card-title text-lg font-bold">Netiquette</h5>
+            <p class="card-text mb-2">This project is an online platform dedicated to guiding users on the proper and responsible use of the internet. Through insightful content and interactive features.</p>
+            <div class="d-flex justify-content-center gap-4 align-items-center">
+              <a href="https://nmanners.netlify.app/" class="btn btn-warning">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card project-card animate__animated animate__fadeIn">
+          <img src="src/studentEvaluator.png" class="card-img-top" alt="Project 5">
+          <div class="card-body text-center">
+            <h5 class="card-title text-lg font-bold">Student Evaluator</h5>
+            <p class="card-text mb-2">The Student Evaluator System is a digital tool designed to streamline the process of evaluating and assessing student performance in educational institutions.</p>
+            <div class="d-flex justify-content-center gap-4 align-items-center">
+              <a href="StudentEvaluator.html" class="btn btn-warning">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+</section>
+
+
+<!----Contact-->
+<section class="contact py-5" id="contact">
+  <div class="container-lg py-4">
+    <div class="row justify-content-center animate__animated animate__fadeInRight">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="fs-2 font-extrabold mb-5">Contact Me</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row animate__animated animate__fadeInRight">
+      <div class="col-md-5">
+        <div class="contact-item d-flex mb-3">
+          <div class="icon fs-4 text-primary">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <div class="text ms-3">
+            <h3 class="fs-5">Email</h3>
+            <p class="text-muted">cyga.aguilar.au@phinmaed.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item d-flex mb-3">
+          <div class="icon fs-4 text-primary">
+            <i class="bi bi-telephone-plus"></i>
+          </div>
+          <div class="text ms-3">
+            <h3 class="fs-5">Phone No.</h3>
+            <p class="text-muted">+63 976 799 5856</p>
+          </div>
+        </div>
+        
+        <div class="contact-item d-flex mb-3">
+          <div class="icon fs-4 text-primary">
+            <i class="bi bi-paperclip"></i>
+          </div>
+          <div class="text ms-3">
+            <h3 class="fs-5">Jobs180</h3>
+            <p class="lead"><a href="aguilarcyruzjaeg.jobs180.com">CyruzPogi</a></p>
+          </div>
+        </div>      
+
+        <div class="contact-item d-flex mb-3">
+          <div class="icon fs-4 text-primary">
+            <i class="bi bi-github"></i>
+          </div>
+          <div class="text ms-3">
+            <h3 class="fs-5">Github</h3>
+            <p class="lead"><a href="https://github.com/CyruzAguilar">YayotPogi</a></p>
+          </div>
+        </div>   
+      </div>
+
+      <div class="col-md-7 animate__animated animate__fadeInRight">
+        <div class="contact-form">
+          <form action="contact_process.php" method="post"> 
+            <div class="row mb-4">
+              <div class="col-lg-6">
+                <input type="text" placeholder="Name" id="name" name="name" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+              </div>
+              <div class="col-lg-6">
+                <input type="email" placeholder="Email" id="email" name="email" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-lg-12">
+                <input type="text" placeholder="Subject" id="subject" name="subject" class="form-control form-control-lg fs-6 border-0 shadow-sm" required>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-lg-12">
+                <textarea rows="5" placeholder="Message" id="message" name="message" class="form-control form-control-lg fs-6 border-0 shadow-sm" required></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <button type="submit" class="btn btn-dark btn-lg px-5 animate__animated animate__fadeInUp">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row justify-content-center align-items-center animate__animated animate__fadeIn">
+        <div class="col-auto">
+          <a href="https://www.facebook.com/cyga.aguilarjae?mibextid=9R9pXO" target="_blank" class="text-white me-3"><i class="bi bi-facebook fs-3"></i></a>
+          <a href="https://instagram.com/cyrz.aguilar?igshid=OGQ5ZDc2ODk2ZA==
+          " target="_blank" class="text-white me-3"><i class="bi bi-instagram fs-3"></i></a>
+          <a href="https://www.linkedin.com/in/cyruz-aguilar-b2a8062b7/" target="_blank" class="text-white me-3"><i class="bi bi-linkedin fs-3"></i></a>
+        </div>  
+        <div class="col-auto">
+          <p class="mb-0">&copy; 2022 Cyruz Aguilar. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="animations.js"></script>
+</body>
+</html>
